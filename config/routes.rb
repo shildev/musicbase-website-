@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
 
+  devise_for :authors
   root 'base/posts#index'
   #namespace expects url to contain string author within it, e.g '/author/posts'
   #for example, http://localhost:3000/posts/new will not work.
   #However, url will be fixed just with the prefix of author added; http://localhost:3000/author/posts/new
-  namespace :author do
+  namespace :authors do
     resources :posts
   end
 

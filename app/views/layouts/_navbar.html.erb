@@ -11,12 +11,17 @@
         <li class="list-group-item">
           <%= link_to 'Contact', contact_path, class: "nav-link #{yield(:contact_active)}" %>
         </li>
-      <li class="list-group-item">
-        <%= link_to 'My Posts(Admin privilege)', author_posts_path, class: "nav-link #{yield(:author)}" %>
-      </li>
-    </ul>
+        <% if author_signed_in? %>
+          <li class="list-group-item">
+            <%= link_to 'My Posts(Admin privilege)', authors_posts_path, class: "nav-link #{yield(:author)}" %>
+          </li>
+          <li class="list-group-item">
+            <%= link_to 'Log Out', destroy_author_session_path, method: :delete, class: "nav-link" %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
   </div>
- </div>
 </div>
 
 <nav class="navbar navbar-light bg-faded">
@@ -37,9 +42,14 @@
       <li class="nav-item">
         <%= link_to 'Contact', contact_path, class: "nav-link #{yield(:contact_active)}" %>
       </li>
-      <li class="nav-item">
-        <%= link_to 'My Posts(Admin privilege)', author_posts_path, class: "nav-link #{yield(:author)}" %>
-      </li>
+      <% if author_signed_in? %>
+        <li class="nav-item">
+          <%= link_to 'My Posts(Admin privilege)', authors_posts_path, class: "nav-link #{yield(:author)}" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Log Out', destroy_author_session_path, method: :delete, class: "nav-link" %>
+        </li>
+      <% end %>
     </ul>
   </div>
  </nav>

@@ -1,0 +1,10 @@
+<tr>
+  <td><%= link_to post.title, authors_post_path(post) %></td>
+
+  <td><%= link_to 'Edit', edit_authors_post_path(post), class: 'btn btn-sm btn-primary' %></td>
+
+
+  <td><%= link_to 'Remove', authors_post_path(post), method: :delete, :onclick => "return confirm('Are you sure you want to delete this post?')",
+    class: 'btn btn-sm btn-danger' %><td>
+
+</tr>

@@ -13,6 +13,16 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
- 
 //= require turbolinks
 //= require_tree .
+
+document.addEventListener("turbolinks:load", function() {
+  tinymce.remove();
+  tinymce.init({
+    selector:'textarea#post_body',
+    plugins: 'image media',
+    toolbar: 'undo redo | styleselect | bold italic | image media',
+
+
+  });
+})

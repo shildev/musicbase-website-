@@ -19,10 +19,9 @@
 document.addEventListener("turbolinks:load", function() {
   tinymce.remove();
   tinymce.init({
+    height: '670',
     selector:'textarea#post_body',
     plugins: 'image media',
     toolbar: 'undo redo | styleselect | bold italic | image media',
-
-
   });
 })

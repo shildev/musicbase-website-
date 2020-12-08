@@ -43,6 +43,37 @@
      }
    }
 }
+
+
+.posts.edit, .posts.new {
+  .card {
+    .card-block {
+      background-color: $light-red;
+    }
+    .card-title {
+      margin-bottom: 0;
+      font-size: 18px;
+    }
+    .list-group-item {
+      padding: 8px;
+      border-left: 0;
+      border-right: 0;
+      input[type='text'], textarea {
+        font-size: 14px;
+        background-color: $cool-black;
+      }
+      textarea {
+        height: 100px;
+
+      }
+      &:last-child {
+        background-color: $cool-black;
+      }
+    }
+  }
+}
+
+
 /* Minimum. Above 34em  */
 @media screen and (min-width: 34em) {
   .posts.index .card {

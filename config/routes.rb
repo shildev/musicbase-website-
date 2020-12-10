@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  resources :contact, only: [:new, :create]
   devise_for :authors
   root 'base/posts#index'
   #namespace expects url to contain string author within it, e.g '/author/posts'

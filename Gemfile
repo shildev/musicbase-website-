@@ -30,6 +30,7 @@ gem 'coffee-script-source', '1.8.0'
 gem 'execjs'
 gem 'autoprefixer-rails', '8.6.5'
 gem 'jquery-rails'
+gem 'mail_form', '~> 1.5', '>= 1.5.1'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

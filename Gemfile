@@ -35,7 +35,7 @@ gem 'execjs'
 gem 'autoprefixer-rails', '8.6.5'
 gem 'jquery-rails'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
-
+gem 'tzinfo-data', '~> 1.2020', '>= 1.2020.4'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
@@ -51,7 +51,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'devise'
 
 group :development, :test do
-
+  gem 'sqlite3', '~> 1.3.6'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -71,12 +71,9 @@ group :test do
   gem 'chromedriver-helper'
 end
 
-group :development do
- gem 'sqlite3', '~> 1.3.13'
-end
 
 group :production do
- gem 'pg', '~> 0.20'
+ gem "pg"
  gem 'rails_12factor'
 
 end

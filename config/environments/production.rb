@@ -1,18 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
-  config.action_mailer.default_url_options = { host: 'https://shilsmusicbase.herokuapp.com' }
-  config.action_mailer.delivery_method = :smtp
-  ActionMailer::Base.smtp_settings = {
-    :user_name => "app194226136@heroku.com",
-    :password => "wj9zmlfm4379",
-    :domain => 'https://shilsmusicbase.herokuapp.com',
-    :address => "heroku.com",
-    :port => 587,
-    :authentication => :plain,
-    :enable_starttls_auto => true
-  }
-  end
   # Code is not reloaded between requests.
   config.cache_classes = true
 
@@ -103,3 +91,4 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+end

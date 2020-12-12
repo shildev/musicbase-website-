@@ -31,6 +31,7 @@ To run the server on HEROKU, please ensure:
 -the pg gem is within group :production do
 
 -the sqlite3 gem is within group :development, :test do, and that the gem is gem 'sqlite3', '~> 1.3.13'
+
 ---------------------------------------------------------------------------------------------------------------
 
 Differences between the site running locally and the heroku site:

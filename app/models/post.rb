@@ -4,6 +4,7 @@ class Post < ApplicationRecord
 
  belongs_to :author, :optional => true
 
+
  scope :most_recent, -> { order(id: :desc) }
 
  def should_generate_new_friendly_id?

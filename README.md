@@ -1,5 +1,6 @@
 # README
 TheMusicBase
+(Warning: contact page currently down until further notice)
 
 A website or music collection which features a variety of playlists and mixes I've created as well as songs i've chosen to add.
 These range from different songs to soundtracks.

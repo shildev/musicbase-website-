@@ -42,4 +42,11 @@ The site that runs locally has many more individual links the user can access on
 
 I have created more posts on the local site.
 
+------------------------------------------------------------------------------------------------
+
+Notes to self: IMPROVEMENTS FOR THE FUTURE
+-Add a paginate function so the user doesnt have to go through endless scrolling, and can use pages instead
+-increased comment moderation?
+-fix the contact page
+
 

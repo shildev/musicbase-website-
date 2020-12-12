@@ -63,13 +63,13 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: 'https://shilsmusicbase.herokuapp.com' }
   config.action_mailer.delivery_method = :smtp
 
-    ActionMailer::Base.smtp_settings = {
-    :user_name => ENV['SENDGRID_USERNAME'],
-    :password => ENV['SENDGRID_PASSWORD'],
-    :domain => 'heroku.com',
-    :address => 'smtp.sendgrid.net',
+  ActionMailer::Base.smtp_settings = {
+    :user_name => "xxxxxxxxx@gmail.com",
+    :password => "xxxxxxxx",
+    :domain => 'https://shilsmusicbase.herokuapp.com',
+    :address => "gmail.com",
     :port => 587,
     :authentication => :plain,
     :enable_starttls_auto => true
-  }
+}
 end

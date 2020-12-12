@@ -49,9 +49,9 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'devise'
-
+gem 'sqlite3', git: "https://github.com/sparklemotion/sqlite3-ruby"
 group :development, :test do
-  gem 'sqlite3', '~> 1.3.6'
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -73,7 +73,6 @@ end
 
 
 group :production do
- gem "pg"
- gem 'rails_12factor'
 
+ gem 'rails_12factor'
 end

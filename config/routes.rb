@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   scope module: 'base' do
     get 'about' => 'pages#about', as: :about
-    get 'contact' => 'pages#contact', as: :contact
+    get 'contact' => 'pages#contacts', as: :contact
     get 'posts' => 'posts#index', as: :posts
     get 'posts/:id' => 'posts#show', as: :post
     get 'resourcespage' => 'pages#resourcespage', as: :resourcespage

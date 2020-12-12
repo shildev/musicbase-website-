@@ -38,7 +38,7 @@ gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'tzinfo-data', '~> 1.2020', '>= 1.2020.4'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-
+gem 'sqlite3', git: "https://github.com/sparklemotion/sqlite3-ruby"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -51,7 +51,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'devise'
 
 group :development, :test do
-  gem 'sqlite3', '~> 1.3.13'
+
 
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -75,6 +75,6 @@ end
 
 
 group :production do
- gem 'pg'
+
  gem 'rails_12factor'
 end

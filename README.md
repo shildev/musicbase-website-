@@ -21,7 +21,8 @@ Therefore, to run the server LOCALLY please ensure:
 -------------------------------------------------------------
 
 To run the server on HEROKU, please ensure:
---the adapter lines are "adapter: postgresql" in the config/database.yml file
+
+-the adapter lines are "adapter: postgresql" in the config/database.yml file
 
 (Gemfile:)
 -the pg gem is within group :production do

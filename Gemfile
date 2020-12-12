@@ -43,7 +43,7 @@ gem 'tzinfo-data', '~> 1.2020', '>= 1.2020.4'
 # gem 'capistrano-rails', group: :development
 
 gem 'bootstrap', '4.0.0.alpha3'
-
+gem 'tether-rails'
 gem 'friendly_id', '~> 5.1.0'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false

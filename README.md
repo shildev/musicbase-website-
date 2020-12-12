@@ -23,3 +23,12 @@ Therefore, to run the server LOCALLY please ensure:
 Link for heroku web page: 
 https://shilsmusicbase.herokuapp.com/
 
+To run the server on HEROKU, please ensure:
+
+-the adapter lines are "adapter: postgresql" in the config/database.yml file
+
+(Gemfile:)
+-the pg gem is within group :production do
+
+-the sqlite3 gem is within group :development, :test do, and that the gem is gem 'sqlite3', '~> 1.3.13'
+

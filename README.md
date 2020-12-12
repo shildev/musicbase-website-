@@ -26,3 +26,9 @@ to run the server on heroku, please ensure:
 -the pg gem is within group :production do
 
 -the sqlite3 gem is within group :development, :test do, and that the gem is gem 'sqlite3', '~> 1.3.13'
+
+
+Link for heroku web page: 
+https://shilsmusicbase.herokuapp.com/
+On the heroku page, the data (the posts I have created are not present). 
+Instead, unfortunately all my posts are present only by running the server on local host. Soon however I may recreate these posts so that they are visible on heroku.

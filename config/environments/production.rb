@@ -106,10 +106,10 @@ config.action_mailer.default_url_options = { host: 'https://shilsmusicbase.herok
 config.action_mailer.delivery_method = :smtp
 
 ActionMailer::Base.smtp_settings = {
-  :user_name => "xxxxxxxxx@gmail.com",
-  :password => "xxxxxxxx",
+  :user_name => "app194226136@heroku.com",
+  :password => "wj9zmlfm4379",
   :domain => 'https://shilsmusicbase.herokuapp.com',
-  :address => "gmail.com",
+  :address => "heroku.com",
   :port => 587,
   :authentication => :plain,
   :enable_starttls_auto => true

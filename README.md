@@ -37,7 +37,9 @@ To run the server on HEROKU, please ensure:
 Differences between the site running locally and the heroku site:
 
 The site that runs on heroku has better formatting in the text fields.
-However the site that runs locally has many more individual links the user can access on the resources page.
+
+The site that runs locally has many more individual links the user can access on the resources page.
+
 I have created more posts on the local site.
 
 
